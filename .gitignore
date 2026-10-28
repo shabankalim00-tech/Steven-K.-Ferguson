@@ -1,0 +1,8 @@
+# Temp backups
+*-old.*
+*-orig.*
+*_raw.*
+grant_*.jpg
+grant-*.jpg
+.DS_Store
+Thumbs.db

@@ -1,0 +1,2113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.ico?v=5">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png?v=5">
+<link rel="icon" type="image/png" sizes="192x192" href="images/favicon.png?v=5">
+<link rel="apple-touch-icon" href="images/favicon.png?v=5">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Steven K. Ferguson — Agricultural Consulting</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+  :root{
+
+    --ink:#122820;
+
+    --deep-green:#123a2b;
+
+    --deep-green-2:#0e2f22;
+
+    --cream:#f7f2e7;
+
+    --cream-2:#f1ead9;
+
+    --mint:#c9e4c5;
+
+    --mint-soft:#e3f0e0;
+
+    --white:#ffffff;
+
+    --muted:#5c6b62;
+
+    --line:#e1d9c6;
+
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0;}
+
+  body{
+
+    font-family:'Inter',sans-serif;
+
+    color:var(--ink);
+
+    background:var(--cream);
+
+    line-height:1.55;
+
+    -webkit-font-smoothing:antialiased;
+
+  }
+
+  h1,h2,h3,.serif{font-family:'Source Serif 4',serif;font-weight:600;}
+
+  img{max-width:100%;display:block;}
+
+  a{color:inherit;text-decoration:none;}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+
+  button{font-family:inherit;cursor:pointer;border:none;}
+
+
+
+  /* ---------- Header ---------- */
+
+  header{
+
+    position:sticky;top:0;z-index:50;
+
+    background:var(--cream);
+
+    border-bottom:1px solid var(--line);
+
+  }
+
+  .nav-bar{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;max-width:1180px;margin:0 auto;}
+
+  .brand{display:flex;align-items:center;}
+
+  .brand-link{
+    display:inline-flex;
+    flex-direction:column;
+    align-items:center;
+    text-decoration:none;
+    line-height:1;
+  }
+
+  .brand-icon{
+    height:46px;
+    width:auto;
+    display:block;
+    object-fit:contain;
+  }
+
+  .brand-text{
+    font-family:'Inter',sans-serif;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:2.5px;
+    color:var(--deep-green-2);
+    text-transform:uppercase;
+    margin-top:5px;
+    line-height:1;
+    display:block;
+    text-align:center;
+    white-space:nowrap;
+  }
+
+  nav.links{display:flex;gap:34px;}
+
+  nav.links button{background:none;font-size:14.5px;color:var(--ink);padding:6px 0;border-bottom:2px solid transparent;}
+
+  nav.links button.active{color:var(--deep-green);border-bottom-color:var(--deep-green);font-weight:600;}
+
+  .cta-btn{
+
+    background:var(--deep-green);color:var(--cream);
+
+    padding:12px 22px;border-radius:30px;font-size:14px;font-weight:600;
+
+    display:inline-flex;align-items:center;gap:8px;
+
+    transition:background .2s ease;
+
+  }
+
+  .cta-btn:hover{background:var(--deep-green-2);}
+
+  .cta-outline{
+
+    border:1px solid rgba(255,255,255,.6);color:inherit;
+
+    padding:12px 22px;border-radius:30px;font-size:14px;font-weight:600;
+
+    display:inline-flex;align-items:center;gap:8px;background:transparent;
+
+  }
+
+  .menu-toggle{display:none;background:none;font-size:26px;}
+
+
+
+  /* ---------- Hero ---------- */
+
+  .hero{position:relative;color:#fff;padding:120px 0 90px;background-size:cover;background-position:center 20%;}
+
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg, rgba(10,25,18,.72) 0%, rgba(10,25,18,.35) 55%, rgba(10,25,18,.1) 100%);}
+
+  .hero .wrap{position:relative;z-index:2;}
+
+  .eyebrow{font-size:12.5px;letter-spacing:2.5px;font-weight:600;color:var(--mint);margin-bottom:18px;}
+
+  .hero h1{font-size:56px;font-weight:600;max-width:640px;line-height:1.12;margin-bottom:20px;}
+
+  .hero p.lede{max-width:520px;font-size:17px;color:#e9e9e2;margin-bottom:34px;}
+
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+
+
+
+  .hero.small{padding:80px 0 70px;}
+
+  .hero.small h1{font-size:46px;}
+
+
+
+  /* ---------- Stats strip ---------- */
+
+  .stats{background:var(--deep-green);color:#fff;padding:44px 0;}
+
+  .stats .wrap{display:flex;justify-content:space-around;flex-wrap:wrap;gap:28px;text-align:center;}
+
+  .stat b{font-family:'Source Serif 4',serif;font-size:34px;display:block;font-weight:600;}
+
+  .stat span{font-size:12px;letter-spacing:1.5px;color:var(--mint);}
+
+
+
+  /* ---------- Sections ---------- */
+
+  section.block{padding:90px 0;}
+
+  section.block.tight{padding:70px 0;}
+
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+
+  .kicker{font-size:12.5px;letter-spacing:2px;font-weight:600;color:var(--deep-green);margin-bottom:14px;}
+
+  .section-title{font-size:36px;font-weight:600;margin-bottom:18px;line-height:1.2;}
+
+  .center{text-align:center;}
+
+  .muted{color:var(--muted);}
+
+  .link-arrow{color:var(--deep-green);font-weight:600;font-size:14.5px;}
+
+
+
+  .rounded-img{border-radius:6px;overflow:hidden;}
+
+
+
+  .quote-block{border-left:3px solid var(--deep-green);padding-left:28px;margin:60px 0;max-width:720px;}
+
+  .quote-block p{font-family:'Source Serif 4',serif;font-size:22px;line-height:1.4;margin-bottom:10px;}
+
+  .quote-block cite{font-size:13px;color:var(--muted);font-style:normal;}
+
+
+
+  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+
+  .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+
+
+
+  .card{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:30px 26px;}
+
+  .icon-badge{width:42px;height:42px;border-radius:8px;background:var(--mint-soft);display:flex;align-items:center;justify-content:center;font-size:19px;margin-bottom:18px;}
+
+  .circle-photo{width:96px;height:96px;border-radius:50%;object-fit:cover;margin-bottom:18px;border:3px solid var(--mint-soft);}
+
+  #page-home .quote-block + .grid-4 .circle-photo{width:120px;height:120px;margin-left:auto;margin-right:auto;}
+
+  .card h3{font-size:18px;margin-bottom:10px;font-weight:600;font-family:'Inter',sans-serif;}
+
+  .card p{font-size:14.5px;color:var(--muted);}
+
+  .card ul{margin-top:14px;list-style:none;font-size:14px;color:var(--ink);}
+
+  .card ul li{margin-bottom:9px;padding-left:20px;position:relative;}
+
+  .card ul li::before{content:"✓";position:absolute;left:0;color:var(--deep-green);font-weight:700;}
+
+
+
+  .testimonial{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:28px;}
+
+  .testimonial p{font-family:'Source Serif 4',serif;font-size:16px;margin-bottom:16px;}
+
+  .testimonial b{font-size:14px;display:block;}
+
+  .testimonial span{font-size:12.5px;color:var(--muted);}
+
+
+
+  .cta-band{background:var(--deep-green);color:#fff;padding:90px 0;text-align:center;background-size:cover;background-position:center;position:relative;}
+
+  .cta-band::after{content:"";position:absolute;inset:0;background:rgba(14,47,34,.72);}
+
+  .cta-band .wrap{position:relative;z-index:2;}
+
+  .cta-band h2{font-size:38px;font-weight:600;margin-bottom:16px;}
+
+  .cta-band p{color:#d9e5da;max-width:520px;margin:0 auto 30px;}
+
+
+
+  .value-dark{background:var(--deep-green-2);color:#fff;padding:26px;border-radius:6px;}
+
+  .value-dark .icon-badge{background:rgba(255,255,255,.12);}
+
+  .value-dark h3{color:#fff;}
+
+
+
+  /* Pricing */
+
+  .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch;}
+
+  .price-card{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:34px 28px;display:flex;flex-direction:column;}
+
+  .price-card.featured{background:var(--deep-green);color:#fff;transform:translateY(-14px);}
+
+  .price-card.featured .muted{color:#c9d8cc;}
+
+  .badge-pop{background:var(--mint);color:var(--deep-green-2);font-size:11.5px;font-weight:700;letter-spacing:1px;padding:5px 12px;border-radius:20px;display:inline-block;margin-bottom:16px;}
+
+  .price-amt{font-family:'Source Serif 4',serif;font-size:38px;font-weight:600;margin:14px 0 20px;}
+
+  .price-amt span{font-size:14px;font-weight:400;color:var(--muted);}
+
+  .price-card.featured .price-amt span{color:#c9d8cc;}
+
+  .price-card ul{list-style:none;font-size:14.5px;margin-top:22px;}
+
+  .price-card ul li{margin-bottom:11px;padding-left:22px;position:relative;}
+
+  .price-card ul li::before{content:"✓";position:absolute;left:0;color:var(--deep-green);font-weight:700;}
+
+  .price-card.featured ul li::before{color:var(--mint);}
+
+  .btn-full{width:100%;text-align:center;padding:13px;border-radius:30px;font-weight:600;font-size:14.5px;margin:10px 0 4px;}
+
+  .btn-full.solid{background:var(--deep-green);color:#fff;}
+
+  .btn-full.mint{background:var(--mint);color:var(--deep-green-2);}
+
+  .btn-full.outline{border:1px solid var(--ink);background:none;color:var(--ink);}
+
+
+
+  table.compare{width:100%;border-collapse:collapse;margin-top:20px;}
+
+  table.compare th,table.compare td{padding:16px 14px;text-align:center;border-bottom:1px solid var(--line);font-size:14px;}
+
+  table.compare th:first-child,table.compare td:first-child{text-align:left;font-weight:600;}
+
+  table.compare th{font-size:13px;letter-spacing:.5px;padding-bottom:14px;}
+
+
+
+  .faq-item{border-bottom:1px solid var(--line);padding:18px 0;display:flex;justify-content:space-between;align-items:center;font-weight:500;cursor:pointer;}
+
+
+
+  /* Contact */
+
+  .contact-info-card{background:var(--white);border:1px solid var(--line);border-radius:6px;padding:22px 24px;display:flex;gap:16px;align-items:flex-start;margin-bottom:18px;}
+
+  .contact-info-card .icon-badge{margin-bottom:0;flex-shrink:0;}
+
+  .contact-info-card b{display:block;font-size:11.5px;letter-spacing:1px;color:var(--muted);margin-bottom:4px;}
+
+  .form-card{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:36px;}
+
+  .form-card h3{font-size:22px;margin-bottom:22px;}
+
+  .field{margin-bottom:18px;}
+
+  .field label{font-size:13.5px;font-weight:600;display:block;margin-bottom:7px;}
+
+  .field label .req{color:#b6543a;}
+
+  .field input,.field textarea{
+
+    width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:5px;
+
+    font-family:inherit;font-size:14px;background:var(--cream-2);
+
+  }
+
+  .field textarea{resize:vertical;min-height:100px;}
+
+
+
+  /* Footer */
+
+  footer{background:var(--deep-green-2);color:#cfe0d2;padding:64px 0 26px;}
+
+  .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;margin-bottom:50px;}
+
+  .footer-grid h4{color:#fff;font-size:13px;letter-spacing:1px;margin-bottom:16px;}
+
+  .footer-grid ul{list-style:none;font-size:14px;}
+
+  .footer-grid ul li{margin-bottom:10px;}
+
+  .footer-grid ul li a:hover{color:#fff;}
+
+  .foot-brand{margin-bottom:16px;}
+
+  .foot-brand-link{
+    display:inline-flex;
+    flex-direction:column;
+    align-items:center;
+    text-decoration:none;
+    line-height:1;
+  }
+
+  .foot-brand-icon{
+    height:56px;
+    width:auto;
+    display:block;
+    object-fit:contain;
+  }
+
+  .foot-brand-text{
+    font-family:'Inter',sans-serif;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:2.5px;
+    color:#8fa896;
+    text-transform:uppercase;
+    margin-top:6px;
+    line-height:1;
+    display:block;
+    text-align:center;
+    white-space:nowrap;
+  }
+
+  .social{display:flex;gap:10px;margin-top:16px;}
+
+  .social a{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:13px;}
+
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;font-size:12.5px;color:#8fa896;flex-wrap:wrap;gap:10px;}
+
+
+
+  .page{display:none;}
+
+  .page.active{display:block;}
+
+
+
+  @media(max-width:900px){
+
+    .two-col,.grid-4,.grid-3,.grid-2,.price-grid,.footer-grid{grid-template-columns:1fr;}
+
+    .price-card.featured{transform:none;}
+
+    nav.links{display:none;}
+
+    .hero h1{font-size:38px;}
+
+    .cta-btn.header-only{display:none;}
+
+  }
+
+</style>
+
+
+
+<style id="partner-progress-responsive">
+
+@media(max-width:900px){
+
+  #partner-progress .wrap > div[style*="grid-template-columns"]{grid-template-columns:1fr !important;}
+
+  #partner-progress img{height:200px !important;}
+
+}
+
+</style>
+
+
+
+<style id="about-partner-progress-style">
+
+#about-partner-progress{
+
+  padding:76px 0 82px;
+
+}
+
+#about-partner-progress .partner-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(2,minmax(0,1fr));
+
+  gap:22px;
+
+}
+
+#about-partner-progress .partner-card{
+
+  background:#0b3327;
+
+  border:1px solid rgba(255,255,255,.10);
+
+  border-radius:16px;
+
+  padding:20px;
+
+  display:grid;
+
+  grid-template-columns:220px minmax(0,1fr);
+
+  gap:24px;
+
+  align-items:center;
+
+  min-height:260px;
+
+  overflow:hidden;
+
+}
+
+#about-partner-progress .partner-img{
+
+  width:100%;
+
+  height:210px;
+
+  object-fit:cover;
+
+  border-radius:12px;
+
+}
+
+#about-partner-progress .partner-copy{
+
+  min-width:0;
+
+}
+
+#about-partner-progress .partner-icon{
+
+  width:56px;
+
+  height:56px;
+
+  border-radius:12px;
+
+  background:rgba(255,255,255,.10);
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  font-size:25px;
+
+  margin-bottom:16px;
+
+}
+
+#about-partner-progress .partner-card h3{
+
+  color:#fff;
+
+  font-size:25px;
+
+  line-height:1.2;
+
+  margin-bottom:12px;
+
+}
+
+#about-partner-progress .partner-card p{
+
+  color:#cfe0d2;
+
+  font-size:15px;
+
+  line-height:1.55;
+
+  margin-bottom:18px;
+
+}
+
+#about-partner-progress .partner-link{
+
+  color:#e5efc4;
+
+  font-size:14px;
+
+  font-weight:600;
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:8px;
+
+}
+
+#about-partner-progress .partner-link::before{
+
+  content:"";
+
+  width:34px;
+
+  height:2px;
+
+  background:#b7d76a;
+
+  display:inline-block;
+
+}
+
+@media(max-width:1050px){
+
+  #about-partner-progress .partner-card{
+
+    grid-template-columns:180px minmax(0,1fr);
+
+  }
+
+}
+
+@media(max-width:900px){
+
+  #about-partner-progress .partner-grid{
+
+    grid-template-columns:1fr;
+
+  }
+
+  #about-partner-progress .section-title{
+
+    font-size:36px !important;
+
+  }
+
+}
+
+@media(max-width:620px){
+
+  #about-partner-progress .partner-card{
+
+    grid-template-columns:1fr;
+
+  }
+
+  #about-partner-progress .partner-img{
+
+    height:200px;
+
+  }
+
+}
+
+</style>
+
+
+
+<style id="service-card-images">
+
+#page-services .service-card-visual{width:100%;height:150px;margin:0 0 18px;border-radius:12px;overflow:hidden;background:#eef2ea}
+
+#page-services .service-card-visual img{width:100%;height:100%;display:block;object-fit:cover}
+
+</style>
+
+
+
+<style id="services-enhanced-sections">
+
+#page-services .svc-story{padding:92px 0;background:#fff}
+
+#page-services .svc-story-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center}
+
+#page-services .svc-story-image{position:relative}
+
+#page-services .svc-story-image img{width:100%;height:510px;object-fit:cover;border-radius:18px}
+
+#page-services .svc-story-note{position:absolute;right:-24px;bottom:28px;width:235px;background:#123a2b;color:#fff;padding:22px;border-radius:14px;box-shadow:0 18px 40px rgba(18,40,32,.18)}
+
+#page-services .svc-story-note b{font-family:'Source Serif 4',serif;font-size:25px;display:block;line-height:1.15;margin-bottom:8px}
+
+#page-services .svc-story-note span{font-size:13px;color:#d9e5da}
+
+#page-services .svc-points{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+
+#page-services .svc-point{padding:18px 18px 17px;border:1px solid var(--line);border-radius:12px;background:var(--cream)}
+
+#page-services .svc-point b{font-size:14px;display:block;margin-bottom:5px}
+
+#page-services .svc-point p{font-size:13px;color:var(--muted)}
+
+
+
+#page-services .svc-why{padding:96px 0;background:#0e2f22;color:#fff}
+
+#page-services .svc-why-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:end;margin-bottom:42px}
+
+#page-services .svc-why-head .section-title{color:#fff;margin-bottom:0}
+
+#page-services .svc-why-head p{color:#cfe0d2;max-width:620px}
+
+#page-services .svc-why-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:24px}
+
+#page-services .svc-why-photo{height:520px;border-radius:18px;overflow:hidden;position:relative}
+
+#page-services .svc-why-photo img{width:100%;height:100%;object-fit:cover}
+
+#page-services .svc-why-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(7,28,20,.72))}
+
+#page-services .svc-why-photo-copy{position:absolute;left:28px;right:28px;bottom:26px;z-index:2}
+
+#page-services .svc-why-photo-copy b{font-family:'Source Serif 4',serif;font-size:27px;display:block;margin-bottom:6px}
+
+#page-services .svc-why-photo-copy span{font-size:13.5px;color:#e4eee6}
+
+#page-services .svc-why-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+
+#page-services .svc-why-card{background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.12);padding:24px;border-radius:14px;min-height:160px}
+
+#page-services .svc-why-card .num{font-family:'Source Serif 4',serif;color:#b7d76a;font-size:25px;margin-bottom:14px}
+
+#page-services .svc-why-card h3{font-family:'Inter',sans-serif;font-size:16px;color:#fff;margin-bottom:8px}
+
+#page-services .svc-why-card p{font-size:13.5px;color:#cfe0d2}
+
+
+
+#page-services .svc-process{padding:96px 0;background:var(--cream)}
+
+#page-services .svc-process-top{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:42px}
+
+#page-services .svc-process-top p{max-width:480px}
+
+#page-services .svc-process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+
+#page-services .svc-step{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+
+#page-services .svc-step img{width:100%;height:220px;object-fit:cover}
+
+#page-services .svc-step-copy{padding:24px}
+
+#page-services .svc-step-no{font-size:11px;letter-spacing:1.8px;font-weight:700;color:var(--deep-green);margin-bottom:10px}
+
+#page-services .svc-step h3{font-family:'Source Serif 4',serif;font-size:22px;margin-bottom:8px}
+
+#page-services .svc-step p{font-size:14px;color:var(--muted)}
+
+
+
+#page-services .svc-results{padding:92px 0;background:#fff}
+
+#page-services .svc-results-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:58px;align-items:center}
+
+#page-services .svc-results-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+
+#page-services .svc-result{border-left:3px solid var(--deep-green);padding:12px 14px;background:var(--cream)}
+
+#page-services .svc-result b{display:block;font-size:14px;margin-bottom:4px}
+
+#page-services .svc-result span{font-size:12.5px;color:var(--muted)}
+
+#page-services .svc-results-img{height:460px;border-radius:18px;overflow:hidden}
+
+#page-services .svc-results-img img{width:100%;height:100%;object-fit:cover}
+
+
+
+@media(max-width:900px){
+
+  #page-services .svc-story-grid,#page-services .svc-why-head,#page-services .svc-why-layout,#page-services .svc-results-grid{grid-template-columns:1fr}
+
+  #page-services .svc-process-grid{grid-template-columns:1fr}
+
+  #page-services .svc-story-note{right:14px}
+
+  #page-services .svc-why-cards{grid-template-columns:1fr 1fr}
+
+}
+
+@media(max-width:620px){
+
+  #page-services .svc-points,#page-services .svc-why-cards,#page-services .svc-results-list{grid-template-columns:1fr}
+
+  #page-services .svc-process-top{display:block}
+
+  #page-services .svc-story-image img,#page-services .svc-why-photo,#page-services .svc-results-img{height:360px}
+
+}
+
+</style>
+
+
+
+
+
+<style id="contact-premium-redesign">
+
+#page-contact{background:#f7f2e7}
+
+#page-contact .contact-hero-new{padding:58px 0 72px;background:#0d241b;color:#fff}
+
+#page-contact .contact-hero-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:42px;align-items:center}
+
+#page-contact .contact-hero-copy{padding:26px 0}
+
+#page-contact .contact-label{font-size:12px;letter-spacing:2.6px;font-weight:700;color:#b7d76a;margin-bottom:18px}
+
+#page-contact .contact-hero-copy h1{font-size:54px;line-height:1.04;margin-bottom:20px}
+
+#page-contact .contact-hero-copy p{color:#d6e2d9;font-size:16px;max-width:470px;margin-bottom:28px}
+
+#page-contact .contact-hero-photo{height:430px;border-radius:22px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.28)}
+
+#page-contact .contact-hero-photo img{width:100%;height:100%;object-fit:cover}
+
+#page-contact .contact-main-new{padding:88px 0}
+
+#page-contact .contact-intro{text-align:center;max-width:720px;margin:0 auto 46px}
+
+#page-contact .contact-intro h2{font-size:40px;margin-bottom:12px}
+
+#page-contact .contact-intro p{color:var(--muted)}
+
+#page-contact .contact-layout-new{display:grid;grid-template-columns:.82fr 1.18fr;gap:30px;align-items:stretch}
+
+#page-contact .contact-side-new{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+
+#page-contact .contact-side-photo{height:245px}
+
+#page-contact .contact-side-photo img{width:100%;height:100%;object-fit:cover}
+
+#page-contact .contact-side-body{padding:30px}
+
+#page-contact .contact-side-body h3{font-size:27px;margin-bottom:8px}
+
+#page-contact .contact-side-body>p{font-size:14px;color:var(--muted);margin-bottom:24px}
+
+#page-contact .contact-detail{display:flex;gap:14px;padding:15px 0;border-top:1px solid var(--line)}
+
+#page-contact .contact-detail:first-of-type{border-top:0}
+
+#page-contact .contact-detail .mini{width:38px;height:38px;border-radius:50%;background:var(--mint-soft);display:flex;align-items:center;justify-content:center;flex:0 0 38px}
+
+#page-contact .contact-detail b{display:block;font-size:11px;letter-spacing:1px;color:var(--muted);margin-bottom:3px}
+
+#page-contact .contact-detail span{font-size:14.5px;font-weight:600}
+
+#page-contact .contact-form-new{background:#fff;border:1px solid var(--line);border-radius:18px;padding:36px}
+
+#page-contact .contact-form-new h3{font-size:29px;margin-bottom:7px}
+
+#page-contact .contact-form-new .form-sub{font-size:14px;color:var(--muted);margin-bottom:26px}
+
+#page-contact .contact-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+
+#page-contact .contact-form-new .field{margin-bottom:16px}
+
+#page-contact .contact-form-new .field.full{grid-column:1/-1}
+
+#page-contact .contact-form-new input,#page-contact .contact-form-new textarea,#page-contact .contact-form-new select{width:100%;padding:13px 14px;border:1px solid #d8d1c0;border-radius:9px;background:#fbfaf6;font:inherit;font-size:14px;color:var(--ink)}
+
+#page-contact .contact-form-new textarea{min-height:120px;resize:vertical}
+
+#page-contact .contact-submit{width:100%;padding:14px 20px;border-radius:30px;background:var(--deep-green);color:#fff;font-weight:700;font-size:14px}
+
+#page-contact .contact-visit{padding:0 0 92px}
+
+#page-contact .contact-visit-card{display:grid;grid-template-columns:1.08fr .92fr;background:#e8efe5;border-radius:22px;overflow:hidden}
+
+#page-contact .contact-visit-photo{height:430px}
+
+#page-contact .contact-visit-photo img{width:100%;height:100%;object-fit:cover}
+
+#page-contact .contact-visit-copy{padding:52px;display:flex;flex-direction:column;justify-content:center}
+
+#page-contact .contact-visit-copy h2{font-size:38px;margin-bottom:15px}
+
+#page-contact .contact-visit-copy p{color:var(--muted);margin-bottom:24px}
+
+#page-contact .visit-chip{display:inline-flex;align-items:center;gap:10px;background:#fff;border-radius:12px;padding:14px 16px;margin-bottom:12px;font-size:14px}
+
+@media(max-width:900px){#page-contact .contact-hero-grid,#page-contact .contact-layout-new,#page-contact .contact-visit-card{grid-template-columns:1fr}#page-contact .contact-hero-copy h1{font-size:42px}#page-contact .contact-hero-photo{height:350px}#page-contact .contact-form-grid{grid-template-columns:1fr}#page-contact .contact-form-new .field.full{grid-column:auto}}
+
+@media(max-width:620px){#page-contact .contact-hero-new{padding:40px 0 55px}#page-contact .contact-hero-copy h1{font-size:36px}#page-contact .contact-main-new{padding:62px 0}#page-contact .contact-form-new{padding:24px}#page-contact .contact-visit-copy{padding:30px}#page-contact .contact-visit-photo{height:300px}}
+
+
+  @media(max-width:620px){
+    .brand-icon{height:38px;}
+    .brand-text{font-size:9px;letter-spacing:1.8px;}
+  }
+</style>
+
+</head>
+
+<body>
+
+
+
+<header>
+
+  <div class="nav-bar">
+
+    <div class="brand">
+      <a href="#" onclick="goTo('home');return false;" class="brand-link" title="Steven K. Ferguson LLC">
+        <img src="images/logo-icon.png" alt="Steven K. Ferguson" class="brand-icon">
+        <span class="brand-text">STEVEN K. FERGUSON</span>
+      </a>
+    </div>
+
+    <nav class="links">
+
+      <button data-page="home" class="active">Home</button>
+
+      <button data-page="about">About</button>
+
+      <button data-page="services">Services</button>
+
+      <button data-page="pricing">Pricing</button>
+
+      <button data-page="contact">Contact</button>
+
+    </nav>
+
+    <button class="cta-btn header-only" onclick="goTo('contact')">Consult With Us →</button>
+
+  </div>
+
+</header>
+
+
+
+<!-- ================= HOME ================= -->
+
+<main id="page-home" class="page active">
+
+
+
+  <section class="hero" style="background-image:url('images/img-02.jpg');">
+
+    <div class="wrap">
+
+      <div class="eyebrow">STRATEGIC AGRICULTURAL CONSULTING</div>
+
+      <h1>Forward Thinking Solutions for a Stronger Tomorrow</h1>
+
+      <p class="lede">Strategic consulting for agriculture and rural enterprise — helping you grow what matters, sustainably.</p>
+
+      <div class="hero-actions">
+
+        <button class="cta-btn" onclick="goTo('contact')">Get a Free Consultation →</button>
+
+        
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="stats">
+
+    <div class="wrap">
+
+      <div class="stat"><b>25+</b><span>YEARS OF EXPERIENCE</span></div>
+
+      <div class="stat"><b>500+</b><span>CLIENTS ADVISED</span></div>
+
+      <div class="stat"><b>12+</b><span>INDUSTRIES COVERED</span></div>
+
+      <div class="stat"><b>98%</b><span>RESULTS THAT MATTER</span></div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="block">
+
+    <div class="wrap two-col">
+
+      <div>
+
+        <div class="kicker">OUR CORE SERVICES</div>
+
+        <h2 class="section-title">Your Partner in Progress</h2>
+
+        <p class="muted" style="margin-bottom:20px;">For over two decades, Steven K. Ferguson has helped farms, cooperatives, and rural businesses navigate complexity with clarity. We deliver strategies built on deep industry knowledge and a genuine commitment to your legacy.</p>
+
+        <a class="link-arrow" href="#" onclick="goTo('services');return false;">Explore Our Services →</a>
+
+      </div>
+
+      <div class="rounded-img"><img src="images/img-03.jpg" alt="Consultant in field"></div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="block tight">
+
+    <div class="wrap">
+
+      <div class="quote-block">
+
+        <p>"Agriculture isn't just an industry — it's a legacy worth strengthening."</p>
+
+        <cite>— Steven K. Ferguson</cite>
+
+      </div>
+
+      <div class="grid-4">
+
+        <div class="card"><img class="circle-photo" src="https://www.psuconnect.in/_next/image?q=75&url=https%3A%2F%2Fadmin.psuconnect.in%2Fsdsdsd%2FNational-Agricultural-Insurance-Scheme.jpg&w=1920" alt=""><h3>Agricultural Consulting</h3><p>Expert guidance on crop strategy, land optimization, and sustainable farming practices tailored to your operation.</p></div>
+
+        <div class="card"><img class="circle-photo" src="https://images.squarespace-cdn.com/content/v1/601a13326df73b66193bb886/a4195fab-f190-4a8b-bba3-10ba99f877e0/Terra%2BAg%2BBusiness%2BAdvisory.jpg" alt=""><h3>Business Advisory</h3><p>Comprehensive business planning, financial structuring, and operational efficiency for agricultural enterprises.</p></div>
+
+        <div class="card"><img class="circle-photo" src="images/farm-operations.jpg" alt="Farm Operations &amp; Management"><h3>Farm Operations &amp; Management</h3><p>Practical guidance on workflow optimization, precision farming, and resource management for maximum yield.</p></div>
+
+        <div class="card"><img class="circle-photo" src="https://extension.psu.edu/media/catalog/product/c/f/cf46bc5d6bf217a119b6c9a870d7a45d.jpeg?bg-color=255%2C255%2C255&fit=bounds&quality=80&width=900" alt=""><h3>Strategic Planning</h3><p>Long-term roadmaps that align your resources, goals, and market opportunities for lasting resilience.</p></div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="block">
+
+    <div class="wrap two-col">
+
+      <div class="rounded-img"><img src="images/img-04.jpg" alt="Steven K. Ferguson"></div>
+
+      <div>
+
+        <div class="kicker">ABOUT STEVEN K. FERGUSON LLC</div>
+
+        <h2 class="section-title">More Than Consulting — A Commitment to People</h2>
+
+        <p class="muted" style="margin-bottom:24px;">We help farmers, agribusinesses, and communities navigate change, solve complex challenges, and build a stronger, more sustainable future. Our approach is rooted in real-world experience and a genuine commitment to the people we serve.</p>
+
+        <div style="display:flex;gap:30px;margin-bottom:26px;">
+
+          <div style="text-align:center;font-size:12.5px;"><div class="icon-badge" style="margin:0 auto 8px;">👥</div>Client-Centered</div>
+
+          <div style="text-align:center;font-size:12.5px;"><div class="icon-badge" style="margin:0 auto 8px;">🏅</div>Real Experience</div>
+
+          <div style="text-align:center;font-size:12.5px;"><div class="icon-badge" style="margin:0 auto 8px;">🧭</div>Long-Term Focus</div>
+
+        </div>
+
+        <button class="cta-btn" onclick="goTo('about')">Learn More About Us →</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="block tight" style="background:var(--cream-2);">
+
+    <div class="wrap center">
+
+      <div class="kicker">CLIENT SUCCESS</div>
+
+      <h2 class="section-title">Real Experience. Real Impact.</h2>
+
+      <div class="grid-3" style="margin-top:40px;text-align:left;">
+
+        <div class="testimonial"><p>"Steven's guidance transformed how we approach our season planning. We've seen measurable growth every year since."</p><b>James Whitfield</b><span>Owner, Whitfield Family Farms</span></div>
+
+        <div class="testimonial"><p>"Steven's operational strategies and field-level guidance opened doors for our co-op that we didn't even know existed. Truly a partner in our success."</p><b>Maria Gonzalez</b><span>Director, Heartland Co-op</span></div>
+
+        <div class="testimonial"><p>"More than a consultant — Steven became a trusted advisor who understands the real challenges of rural business."</p><b>Robert Hayes</b><span>Founder, Hayes Cattle Ranch</span></div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="cta-band" style="background-image:url('images/img-05.png');">
+
+    <div class="wrap">
+
+      <div class="eyebrow" style="text-align:center;">LET'S BUILD TOGETHER</div>
+
+      <h2>A Brighter Future Starts with the Right Partner</h2>
+
+      <p>Schedule your free consultation and discover how strategic guidance can transform your operation.</p>
+
+      <button class="cta-btn mint-btn" style="background:var(--mint);color:var(--deep-green-2);" onclick="goTo('contact')">Get a Free Consultation →</button>
+
+    </div>
+
+  </section>
+
+
+
+</main>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<main id="page-about" class="page">
+
+
+
+  <section class="hero small" style="background-image:url('images/img-06.jpg');">
+
+    <div class="wrap">
+
+      <div class="eyebrow">ABOUT STEVEN K. FERGUSON LLC</div>
+
+      <h1>About Steven K. Ferguson LLC</h1>
+
+      <p class="lede" style="font-weight:600;color:#fff;">Experience. Integrity. Real Results.</p>
+
+      <p class="lede">We help farmers, agribusinesses, and communities navigate change, solve complex challenges, and build a stronger, more sustainable future.</p>
+
+      <div class="hero-actions">
+
+        <button class="cta-btn" onclick="goTo('contact')">Consult With Us →</button>
+
+        
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="block tight center">
+
+    <div class="wrap">
+
+      <div class="quote-block" style="margin:0 auto;text-align:center;border:none;padding:0;">
+
+        <p>"My mission is simple — to help people, businesses, and communities create stronger, more sustainable futures."</p>
+
+        <cite>— Steven K. Ferguson</cite>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="stats">
+
+    <div class="wrap">
+
+      <div class="stat"><b>25+</b><span>YEARS OF EXPERIENCE</span></div>
+
+      <div class="stat"><b>500+</b><span>CLIENTS ADVISED</span></div>
+
+      <div class="stat"><b>12+</b><span>INDUSTRIES COVERED</span></div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="block">
+
+    <div class="wrap two-col">
+
+      <div>
+
+        <div class="kicker">OUR APPROACH</div>
+
+        <h2 class="section-title">More Than Consulting — A Commitment to People</h2>
+
+        <p class="muted" style="margin-bottom:16px;">Real-world experience, genuine care, and practical wisdom in every engagement.</p>
+
+      </div>
+
+      <div class="rounded-img"><img src="images/img-07.png" alt="Farmer in field"></div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="block tight">
+
+    <div class="wrap">
+
+      <div class="grid-4">
+
+        <div class="card"><div class="icon-badge">👥</div><h3>Client-Centered Approach</h3><p>Every recommendation is grounded in your specific goals and community context.</p></div>
+
+        <div class="card"><div class="icon-badge">🏅</div><h3>Real-World Experience</h3><p>Decades of hands-on agricultural work inform every strategy we develop.</p></div>
+
+        <div class="card"><div class="icon-badge">🔧</div><h3>Practical Solutions</h3><p>Actionable plans that work in the field, not just on paper.</p></div>
+
+        <div class="card"><div class="icon-badge">❤️</div><h3>Long-Term Relationships</h3><p>We measure success in seasons and years, not single engagements.</p></div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="block" style="background:var(--cream-2);">
+
+    <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;align-items:center;">
+
+      <div>
+
+        <div class="kicker">OUR STORY</div>
+
+        <h2 class="section-title" style="font-size:28px;">A Foundation Built on Experience.</h2>
+
+        <p class="muted">Founded on a simple belief: agriculture deserves the same strategic rigor as any major industry.</p>
+
+      </div>
+
+      <div class="rounded-img"><img src="images/img-08.png?v=4" alt="Portrait"></div>
+
+      <div>
+
+        <h3 style="font-family:'Source Serif 4',serif;font-size:22px;margin-bottom:18px;">Guided by Real-World Values</h3>
+
+        <div style="display:flex;flex-direction:column;gap:14px;font-size:14.5px;">
+
+          <div>❤️ &nbsp;Integrity</div>
+
+          <div>🔧 &nbsp;Practical Solutions</div>
+
+          <div>🌱 &nbsp;Sustainable Growth</div>
+
+          <div>🏛️ &nbsp;Communities We Serve</div>
+
+        </div>
+
+        <p style="margin-top:20px;color:var(--deep-green);font-weight:600;">People. Progress. Possibilities.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  
+
+<section id="about-partner-progress" class="block tight" style="background:var(--deep-green);color:#fff;">
+
+  <div class="wrap">
+
+    <div class="center" style="max-width:900px;margin:0 auto 44px;">
+
+      <div class="eyebrow" style="color:#dbe8b2;margin-bottom:18px;">YOUR PARTNER IN PROGRESS</div>
+
+      <h2 class="section-title" style="color:#fff;font-size:44px;line-height:1.15;margin-bottom:18px;">More Than a Consultant — A True Partner</h2>
+
+      <p style="color:#cfe0d2;font-size:17px;line-height:1.6;max-width:760px;margin:0 auto;">
+
+        We bring together deep agricultural knowledge and sharp business perspective to create lasting impact for the communities we serve.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="partner-grid">
+
+      <article class="partner-card">
+
+        <img class="partner-img" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=85" alt="">
+
+        <div class="partner-copy">
+
+          <div class="partner-icon">🌱</div>
+
+          <h3>Agricultural Insight</h3>
+
+          <p>Grounded in real-world experience, we understand the challenges and opportunities in modern agriculture.</p>
+
+          
+
+        </div>
+
+      </article>
+
+
+
+      <article class="partner-card">
+
+        <img class="partner-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=85" alt="">
+
+        <div class="partner-copy">
+
+          <div class="partner-icon">💼</div>
+
+          <h3>Business Perspective</h3>
+
+          <p>We combine data-driven thinking with practical strategies to help businesses grow sustainably.</p>
+
+          
+
+        </div>
+
+      </article>
+
+
+
+      <article class="partner-card">
+
+        <img class="partner-img" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85" alt="">
+
+        <div class="partner-copy">
+
+          <div class="partner-icon">🏛️</div>
+
+          <h3>Community Focus</h3>
+
+          <p>We work closely with people, communities and stakeholders to create shared progress and stronger rural ecosystems.</p>
+
+          
+
+        </div>
+
+      </article>
+
+
+
+      <article class="partner-card">
+
+        <img class="partner-img" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=85" alt="">
+
+        <div class="partner-copy">
+
+          <div class="partner-icon">🎯</div>
+
+          <h3>Lasting Impact</h3>
+
+          <p>Our goal is to deliver solutions that create long-term value — for businesses, for communities and for future generations.</p>
+
+          
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+  <section class="cta-band" style="background-image:url('images/img-05.png');">
+
+    <div class="wrap">
+
+      <div class="eyebrow" style="text-align:center;">LET'S BUILD TOGETHER</div>
+
+      <h2>A Brighter Future Starts with the Right Partner</h2>
+
+      <p>Let's discuss how decades of agricultural expertise can serve your goals.</p>
+
+      <button class="cta-btn" style="background:var(--mint);color:var(--deep-green-2);" onclick="goTo('contact')">Consult With Us →</button>
+
+    </div>
+
+  </section>
+
+
+
+</main>
+
+
+
+<!-- ================= SERVICES ================= -->
+
+<main id="page-services" class="page">
+
+
+
+  <section class="hero small" style="background-image:url('images/img-09.png?v=4');background-size:100% 100%;background-position:center center;background-repeat:no-repeat;">
+
+    <div class="wrap">
+
+      <h1>Our Services</h1>
+
+      <p class="lede" style="font-weight:600;color:#fff;">Practical Solutions for Real-World Challenges</p>
+
+      <p class="lede">We offer a comprehensive range of consulting services designed to help agricultural and rural enterprises navigate complexity and build lasting resilience.</p>
+
+      <div class="hero-actions">
+
+        <button class="cta-btn" onclick="goTo('contact')">Get Started Today →</button>
+
+        
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="block">
+
+    <div class="wrap center" style="margin-bottom:20px;">
+
+      <div class="kicker">SERVICES OVERVIEW</div>
+
+      <h2 class="section-title">Comprehensive Consulting, Rooted in Experience</h2>
+
+    </div>
+
+    <div class="wrap grid-3" style="margin-top:40px;">
+
+      <div class="card"><div class="service-card-visual"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=85" alt="Agricultural Consulting"></div><div class="icon-badge">🌱</div><h3>Agricultural Consulting</h3><p>Crop strategy, land optimization, soil health programs, and sustainable practice integration.</p>
+
+        <ul><li>Crop &amp; land strategy</li><li>Soil health programs</li><li>Sustainability planning</li><li>Season optimization</li></ul>
+
+        </div>
+
+      <div class="card"><div class="service-card-visual"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85" alt="Business Advisory"></div><div class="icon-badge">💼</div><h3>Business Advisory</h3><p>Financial structuring, operational efficiency audits, and growth planning for agribusinesses.</p>
+
+        <ul><li>Financial structuring</li><li>Operational audits</li><li>Growth planning</li><li>Efficiency reviews</li></ul>
+
+        </div>
+
+      <div class="card"><div class="service-card-visual"><img src="images/farm-operations.jpg" alt="Farm Operations &amp; Efficiency"></div><div class="icon-badge">🚜</div><h3>Farm Operations &amp; Efficiency</h3><p>Streamline workflows, machinery usage, and precision agricultural practices for higher operational productivity.</p>
+        <ul><li>Workflow optimization</li><li>Resource &amp; machinery management</li><li>Field-level efficiency audits</li><li>Yield improvement strategy</li></ul>
+        </div>
+      <div class="card"><div class="service-card-visual"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=85" alt="Strategic Planning"></div><div class="icon-badge">🧭</div><h3>Strategic Planning</h3><p>Multi-year roadmaps aligning resources, market opportunities, and risk management.</p>
+
+        <ul><li>Multi-year roadmaps</li><li>Risk management</li><li>Market analysis</li><li>Resource alignment</li></ul>
+
+        </div>
+
+      <div class="card"><div class="service-card-visual"><img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=85" alt="Compliance & Risk Support"></div><div class="icon-badge">🛡️</div><h3>Compliance &amp; Risk Support</h3><p>Navigate regulatory requirements, environmental standards, and liability planning.</p>
+
+        <ul><li>Regulatory guidance</li><li>Environmental standards</li><li>Liability planning</li><li>Audit readiness</li></ul>
+
+        </div>
+
+      <div class="card"><div class="service-card-visual"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85" alt="Community & Economic Development"></div><div class="icon-badge">🏘️</div><h3>Community &amp; Economic Development</h3><p>Support for cooperatives, rural development, and local food systems.</p>
+
+        <ul><li>Cooperative support</li><li>Rural development</li><li>Local food systems</li><li>Regional strategy</li></ul>
+
+        </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="block tight" style="background:var(--deep-green);color:#fff;">
+
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
+
+      <div>
+
+        <h2 style="font-family:'Source Serif 4',serif;font-size:28px;margin-bottom:8px;">Need a Customized Solution?</h2>
+
+        <p style="color:#cfe0d2;">Every operation is unique. Let's craft a plan that fits your land, your goals, and your future.</p>
+
+      </div>
+
+      <button class="cta-btn" style="background:var(--mint);color:var(--deep-green-2);" onclick="goTo('contact')">Get a Free Consultation →</button>
+
+    </div>
+
+  </section>
+
+
+
+
+
+  <section class="svc-story">
+
+    <div class="wrap svc-story-grid">
+
+      <div class="svc-story-image">
+
+        <img src="images/img-10.png" alt="Professional consulting team meeting">
+
+        <div class="svc-story-note">
+
+          <b>Strategy Built Around Your Operation</b>
+
+          <span>Focused guidance shaped by real priorities, practical constraints, and long-term goals.</span>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <div class="kicker">PRACTICAL CONSULTING</div>
+
+        <h2 class="section-title">From Complex Challenges to Clear, Actionable Direction</h2>
+
+        <p class="muted">Our work connects agricultural knowledge with business strategy so owners, producers, and rural organizations can make stronger decisions with greater confidence.</p>
+
+        <div class="svc-points">
+
+          <div class="svc-point"><b>Operational Clarity</b><p>Identify the issues that matter most and establish practical priorities.</p></div>
+
+          <div class="svc-point"><b>Financial Perspective</b><p>Align investments, cost management, and growth decisions.</p></div>
+
+          <div class="svc-point"><b>Field-Level Insight</b><p>Translate strategy into realistic actions for day-to-day operations.</p></div>
+
+          <div class="svc-point"><b>Long-Term Resilience</b><p>Build plans designed to adapt as markets and conditions change.</p></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="svc-why">
+
+    <div class="wrap">
+
+      <div class="svc-why-head">
+
+        <div>
+
+          <div class="kicker" style="color:#b7d76a;">WHY CHOOSE US</div>
+
+          <h2 class="section-title">Experienced Guidance. Personalized Solutions.</h2>
+
+        </div>
+
+        <p>Effective consulting should feel relevant to the people doing the work. We combine practical agricultural understanding, business discipline, and collaborative support to help clients move from uncertainty to informed action.</p>
+
+      </div>
+
+      <div class="svc-why-layout">
+
+        <div class="svc-why-photo">
+
+          <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1500&q=88" alt="Consulting professionals collaborating">
+
+          <div class="svc-why-photo-copy">
+
+            <b>A Partner in the Decisions That Shape Your Future</b>
+
+            <span>Collaborative support from planning through implementation.</span>
+
+          </div>
+
+        </div>
+
+        <div class="svc-why-cards">
+
+          <div class="svc-why-card"><div class="num">01</div><h3>Real-World Experience</h3><p>Recommendations grounded in practical agricultural and business realities.</p></div>
+
+          <div class="svc-why-card"><div class="num">02</div><h3>Customized Strategy</h3><p>No one-size-fits-all plans — every engagement is shaped around the client's goals.</p></div>
+
+          <div class="svc-why-card"><div class="num">03</div><h3>Clear Communication</h3><p>Complex issues are translated into understandable choices and next steps.</p></div>
+
+          <div class="svc-why-card"><div class="num">04</div><h3>Implementation Focus</h3><p>Plans are built to be usable, measurable, and realistic beyond the presentation.</p></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="svc-process">
+
+    <div class="wrap">
+
+      <div class="svc-process-top">
+
+        <div>
+
+          <div class="kicker">HOW WE WORK</div>
+
+          <h2 class="section-title" style="margin-bottom:0;">A Clear Path from Assessment to Action</h2>
+
+        </div>
+
+        <p class="muted">A structured consulting process keeps the work focused while allowing the strategy to adapt to your operation.</p>
+
+      </div>
+
+      <div class="svc-process-grid">
+
+        <article class="svc-step">
+
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1100&q=88" alt="Business assessment and planning">
+
+          <div class="svc-step-copy"><div class="svc-step-no">STEP 01 · ASSESS</div><h3>Understand the Current Position</h3><p>Review goals, operations, risks, resources, and the challenges affecting performance.</p></div>
+
+        </article>
+
+        <article class="svc-step">
+
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1100&q=88" alt="Consulting strategy discussion">
+
+          <div class="svc-step-copy"><div class="svc-step-no">STEP 02 · PLAN</div><h3>Build the Right Strategy</h3><p>Develop a prioritized roadmap with practical recommendations and clear decision points.</p></div>
+
+        </article>
+
+        <article class="svc-step">
+
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1100&q=88" alt="Agricultural field implementation">
+
+          <div class="svc-step-copy"><div class="svc-step-no">STEP 03 · MOVE FORWARD</div><h3>Turn the Plan into Progress</h3><p>Support implementation, evaluate outcomes, and refine the approach as conditions evolve.</p></div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="svc-results">
+
+    <div class="wrap svc-results-grid">
+
+      <div>
+
+        <div class="kicker">WHAT THE WORK SUPPORTS</div>
+
+        <h2 class="section-title">Stronger Decisions Across the Business</h2>
+
+        <p class="muted">Our services are designed to strengthen both immediate decision-making and the long-term health of agricultural and rural enterprises.</p>
+
+        <div class="svc-results-list">
+
+          <div class="svc-result"><b>Smarter Resource Use</b><span>Prioritize time, capital, land, and operational capacity.</span></div>
+
+          <div class="svc-result"><b>Operational Readiness</b><span>Prepare stronger strategies for long-term growth and resilience.</span></div>
+
+          <div class="svc-result"><b>Reduced Risk</b><span>Improve planning around compliance, operations, and changing conditions.</span></div>
+
+          <div class="svc-result"><b>Sustainable Growth</b><span>Create a clearer path for expansion and long-term resilience.</span></div>
+
+        </div>
+
+      </div>
+
+      <div class="svc-results-img">
+
+        <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?auto=format&fit=crop&w=1500&q=88" alt="Agricultural business and farm landscape">
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="cta-band" style="background-image:url('images/img-05.png');">
+
+    <div class="wrap">
+
+      <div class="eyebrow" style="text-align:center;">LET'S BUILD TOGETHER</div>
+
+      <h2>A Brighter Future Starts with the Right Partner</h2>
+
+      <p>Let's discuss how decades of agricultural expertise can serve your goals.</p>
+
+      <button class="cta-btn" style="background:var(--mint);color:var(--deep-green-2);" onclick="goTo('contact')">Consult With Us →</button>
+
+    </div>
+
+  </section>
+
+
+
+</main>
+
+
+
+<!-- ================= PRICING ================= -->
+
+<main id="page-pricing" class="page">
+
+
+
+  <section class="hero small" style="background-image:url('images/img-11.png?v=4');">
+
+    <div class="wrap">
+
+      <h1>Simple, Transparent Pricing</h1>
+
+      <p class="lede" style="font-weight:600;color:#fff;">Choose the Right Plan for Your Goals</p>
+
+      <p class="lede">Flexible consulting packages designed to meet you where you are — whether you're just getting started or managing a large-scale operation.</p>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="block">
+
+    <div class="wrap price-grid">
+
+      <div class="price-card">
+
+        <div class="icon-badge">🌱</div>
+
+        <h3>Starter</h3>
+
+        <p class="muted" style="font-size:13.5px;">Ideal for Individuals &amp; Small Farms</p>
+
+        <div class="price-amt">$499 <span>(one-time)</span></div>
+
+        <button class="btn-full outline" onclick="goTo('contact')">Get Started →</button>
+
+        <ul><li>Initial Consultation</li><li>Basic Needs Assessment</li><li>Action Plan</li><li>Email Support (30 Days)</li></ul>
+
+      </div>
+
+      <div class="price-card featured">
+
+        <div class="badge-pop">MOST POPULAR</div>
+
+        <div class="icon-badge">📊</div>
+
+        <h3>Growth</h3>
+
+        <p class="muted" style="font-size:13.5px;">For Growing Businesses &amp; Farms</p>
+
+        <div class="price-amt">$1,499 <span>(one-time)</span></div>
+
+        <button class="btn-full mint" onclick="goTo('contact')">Get Started →</button>
+
+        <ul><li>In-Depth Analysis</li><li>Customized Strategy</li><li>Implementation Support</li><li>Email &amp; Phone Support (60 Days)</li></ul>
+
+      </div>
+
+      <div class="price-card">
+
+        <div class="icon-badge">👥</div>
+
+        <h3>Enterprise</h3>
+
+        <p class="muted" style="font-size:13.5px;">For Large Operations &amp; Organizations</p>
+
+        <div class="price-amt">Custom <span>(pricing)</span></div>
+
+        <button class="btn-full outline" onclick="goTo('contact')">Contact Us →</button>
+
+        <ul><li>Tailored Consulting Plan</li><li>Ongoing Advisory</li><li>Priority Support</li><li>Long-Term Partnership</li></ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="block tight center">
+
+    <div class="wrap">
+
+      <div class="kicker">COMPARE PLANS</div>
+
+      <h2 class="section-title">Compare Plans</h2>
+
+      <p class="muted">See what's included in each plan to find the best fit for your needs.</p>
+
+      <table class="compare">
+
+        <tr><th>Features</th><th>Starter</th><th>Growth</th><th>Enterprise</th></tr>
+
+        <tr><td>Initial Consultation</td><td>✓</td><td>✓</td><td>✓</td></tr>
+
+        <tr><td>Needs Assessment</td><td>Basic</td><td>In-Depth</td><td>Comprehensive</td></tr>
+
+        <tr><td>Customized Strategy</td><td>—</td><td>✓</td><td>✓</td></tr>
+
+        <tr><td>Implementation Support</td><td>—</td><td>✓</td><td>✓</td></tr>
+
+        <tr><td>Ongoing Support</td><td>30 days</td><td>60 days</td><td>Unlimited</td></tr>
+
+        <tr><td>Priority Support</td><td>—</td><td>—</td><td>✓</td></tr>
+
+        <tr><td>Long-Term Partnership</td><td>—</td><td>—</td><td>✓</td></tr>
+
+      </table>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="block" style="background:var(--cream-2);">
+
+    <div class="wrap center" style="margin-bottom:10px;">
+
+      <div class="kicker">FAQ</div>
+
+      <h2 class="section-title">Frequently Asked Questions</h2>
+
+      <p class="muted">Still have questions? We're here to help.</p>
+
+    </div>
+
+    <div class="wrap" style="max-width:760px;margin:30px auto 0;">
+
+      <div class="faq-item">Can I get a custom plan? <span>⌄</span></div>
+
+      <div class="faq-item">Do you offer ongoing support? <span>⌄</span></div>
+
+      <div class="faq-item">What industries do you work with? <span>⌄</span></div>
+
+      <div class="faq-item">How long does a typical project take? <span>⌄</span></div>
+
+      <div class="faq-item">Is there a long-term commitment? <span>⌄</span></div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="cta-band" style="background-image:url('images/img-05.png');">
+
+    <div class="wrap">
+
+      <div class="eyebrow" style="text-align:center;">LET'S BUILD TOGETHER</div>
+
+      <h2>Not Sure Which Plan Is Right for You?</h2>
+
+      <p>Let's talk about your goals and find the best solution for your needs. A free consultation is the perfect place to start.</p>
+
+      <button class="cta-btn" style="background:var(--mint);color:var(--deep-green-2);" onclick="goTo('contact')">Schedule a Consultation →</button>
+
+    </div>
+
+  </section>
+
+
+
+</main>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<main id="page-contact" class="page">
+
+  <section class="contact-hero-new">
+
+    <div class="wrap contact-hero-grid">
+
+      <div class="contact-hero-copy">
+
+        <div class="contact-label">CONTACT STEVEN K. FERGUSON LLC</div>
+
+        <h1>Expert Guidance Starts With a Conversation.</h1>
+
+        <p>Whether you're planning your next agricultural move, strengthening your business, or looking for practical support, we're ready to understand your goals and help you move forward.</p>
+
+        <a class="cta-btn" style="background:#b7d76a;color:#0e2f22" href="#contact-form-new">Start a Conversation →</a>
+
+      </div>
+
+      <div class="contact-hero-photo"><img src="images/img-12.png" alt="Steven K. Ferguson LLC reception office"></div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="contact-main-new" id="contact-form-new">
+
+    <div class="wrap">
+
+      <div class="contact-intro">
+
+        <div class="kicker">GET IN TOUCH</div>
+
+        <h2>Let's Talk About What You're Building</h2>
+
+        <p>Share a little about your farm, business, or project. We'll connect with you to discuss the right next step.</p>
+
+      </div>
+
+      <div class="contact-layout-new">
+
+        <aside class="contact-side-new">
+
+          <div class="contact-side-photo"><img src="images/img-13.png" alt="Steven K. Ferguson LLC consultation lounge"></div>
+
+          <div class="contact-side-body">
+
+            <h3>We're Here to Help.</h3>
+
+            <p>Reach out directly or send your requirements through the form.</p>
+
+            <div class="contact-detail"><div class="mini">☎</div><div><b>CONTACT NUMBER</b><span>+1 (712) 642-7797</span></div></div>
+
+            <div class="contact-detail"><div class="mini">✉</div><div><b>EMAIL</b><span>personal@stevekferguson.com</span></div></div>
+
+            <div class="contact-detail"><div class="mini">⌖</div><div><b>LOCATION</b><span>Magazine Road, Ankeny, IA 50023</span></div></div>
+
+          </div>
+
+        </aside>
+
+        <div class="contact-form-new">
+
+          <h3>Tell Us How We Can Help</h3>
+
+          <p class="form-sub">Complete the form below and we'll get back to you as soon as possible.</p>
+
+          <form onsubmit="event.preventDefault();alert('Thank you! We’ll be in touch shortly.');">
+
+            <div class="contact-form-grid">
+
+              <div class="field"><label>First Name <span class="req">*</span></label><input required placeholder="First name"></div>
+
+              <div class="field"><label>Last Name <span class="req">*</span></label><input required placeholder="Last name"></div>
+
+              <div class="field"><label>Email <span class="req">*</span></label><input type="email" required placeholder="you@example.com"></div>
+
+              <div class="field"><label>Phone</label><input type="tel" placeholder="Phone number"></div>
+
+              <div class="field full"><label>Business / Farm Name</label><input placeholder="Business or farm name"></div>
+
+              <div class="field full"><label>Service You're Interested In</label><select><option>Select a service</option><option>Agricultural Consulting</option><option>Business Advisory</option><option>Farm Operations & Management</option><option>Strategic Planning</option><option>Compliance & Risk Support</option><option>Community & Economic Development</option></select></div>
+
+              <div class="field full"><label>Tell Us About Your Requirements <span class="req">*</span></label><textarea required placeholder="Tell us what you'd like help with..."></textarea></div>
+
+              <div class="field full"><button class="contact-submit" type="submit">Submit Message →</button></div>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="contact-visit">
+
+    <div class="wrap">
+
+      <div class="contact-visit-card">
+
+        <div class="contact-visit-photo"><img src="images/img-14.png" alt="Steven K. Ferguson LLC office"></div>
+
+        <div class="contact-visit-copy">
+
+          <div class="kicker">PERSONAL, PRACTICAL SUPPORT</div>
+
+          <h2>Let's Work Together</h2>
+
+          <p>Good consulting begins with understanding your operation, your challenges, and where you want to go. Start the conversation and let's find a practical path forward.</p>
+
+          <div class="visit-chip">📍 <strong>Magazine Road, Ankeny, IA 50023</strong></div>
+
+          <div class="visit-chip">✉ <strong>personal@stevekferguson.com</strong></div>
+
+          <div style="margin-top:12px"><a href="mailto:personal@stevekferguson.com" class="cta-btn">Email Us →</a></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+
+
+
+<footer>
+
+  <div class="wrap">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <div class="foot-brand">
+          <a href="#" onclick="goTo('home');return false;" class="foot-brand-link" title="Steven K. Ferguson LLC">
+            <img src="images/logo-icon.png" alt="Steven K. Ferguson" class="foot-brand-icon">
+            <span class="foot-brand-text">STEVEN K. FERGUSON</span>
+          </a>
+        </div>
+
+        <p style="font-size:13.5px;">More than consulting — a commitment to people, progress, and possibilities in agriculture.</p>
+
+      </div>
+
+      <div>
+
+        <h4>QUICK LINKS</h4>
+
+        <ul>
+
+          <li><a href="#" onclick="goTo('home');return false;">Home</a></li>
+
+          <li><a href="#" onclick="goTo('about');return false;">About</a></li>
+
+          <li><a href="#" onclick="goTo('services');return false;">Services</a></li>
+
+          <li><a href="#" onclick="goTo('pricing');return false;">Pricing</a></li>
+
+          <li><a href="#" onclick="goTo('contact');return false;">Contact</a></li>
+
+        </ul>
+
+      </div>
+
+      <div>
+
+        <h4>OUR SERVICES</h4>
+
+        <ul>
+
+          <li>Agricultural Consulting</li><li>Business Advisory</li><li>Farm Operations &amp; Management</li><li>Strategic Planning</li><li>Compliance &amp; Risk Support</li>
+
+        </ul>
+
+      </div>
+
+      <div>
+
+        <h4>GET IN TOUCH</h4>
+
+        <ul>
+
+          <li>📞 (800) 555-1234</li>
+
+          <li>✉️ info@stevenkferguson.com</li>
+
+          <li>📍 1240 Prairie Avenue<br>Springfield, IL 62704</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="foot-bottom">
+
+      <span>© 2024 Steven K. Ferguson LLC. All Rights Reserved.</span>
+
+      <span>Building Stronger Tomorrows.™</span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<script>
+
+  function goTo(page){
+
+    document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+
+    document.getElementById('page-'+page).classList.add('active');
+
+    document.querySelectorAll('nav.links button').forEach(b=>{
+
+      b.classList.toggle('active', b.dataset.page===page);
+
+    });
+
+    window.scrollTo(0,0);
+
+  }
+
+  document.querySelectorAll('nav.links button').forEach(b=>{
+
+    b.addEventListener('click', ()=>goTo(b.dataset.page));
+
+  });
+
+</script>
+
+
+
+</body>
+
+</html>
